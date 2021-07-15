@@ -6,7 +6,7 @@
 ## Domain Invariant Data
 ### Sensor-to-Sensor
 #### [CNN-based synthesis of realistic high-resolution LiDAR data](https://arxiv.org/pdf/1907.00787.pdf) 
-Compare down-upsampled with original range images via pointwise/perceptive/semantic losses. \
+Compare down-upsampled with original range images via pointwise/perceptive/semantic losses. Possible to use both on semantic and detection tasks without using the semantic loss \
 Reproducibility: Hard / No Code
 #### [Simulation-based Lidar Super-resolution for Ground Vehicles](https://arxiv.org/pdf/2004.05242.pdf) 
 Use U-Net with droupout on range image to upsample simulated environments with different sensors. Any super resolution model would likely perform similar, mentioning effect of drop out rate. \
