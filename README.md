@@ -22,7 +22,12 @@ Reproducibility: Hard / No Code
 ## Domain Mapping 
 ### Dataset-to-Dataset
 #### [Domain Adaptation for Vehicle Detection from Bird’s Eye View LiDAR Point Cloud Data](https://arxiv.org/pdf/1905.08955.pdf)
-Using GAN to make synthethic LIDAR-BEV data more realistic improve BEV-YOLO detector \ 
+Using GAN to make synthethic LIDAR-BEV data more realistic improve BEV-YOLO detector
 #### [LiDAR Sensor modeling and Data augmentation with GANs for Autonomous driving](https://arxiv.org/pdf/1905.07290.pdf)
-Cycle GAN over BEV-LIDAR of synthetic data to improve performance of YOLO-R over KITTI. [50] is pretty much same work by same authors.\ 
+Cycle GAN over BEV-LIDAR of synthetic data to improve performance of YOLO-R over KITTI. [50] is pretty much same work by same authors.
 ### Sim-to-Real
+#### [Deep Generative Modeling of LiDAR Data](https://arxiv.org/pdf/1812.01180.pdf)
+Special 2D representation of LIDAR data by keeping (x,y,z) unlike range image. Perform noise and removal to original data, use VAE and GAN for reconstruction. Surprisingly good results with VAE trained only on compressed embeddings not the noisy data itself. \
+Reproducilibility: Medium / [Code](https://github.com/pclucas14/lidar_generation)
+#### [Learning to Drop Points for LiDAR Scan Synthesis] (https://arxiv.org/pdf/2102.11952.pdf)
+#### [ePointDA: An End-to-End Simulation-to-Real Domain Adaptation Framework for LiDAR Point Cloud Segmentation] (https://arxiv.org/pdf/2009.03456.pdf)
