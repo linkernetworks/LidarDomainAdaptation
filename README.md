@@ -16,7 +16,7 @@ TBD
 #### [Analyzing the Cross-Sensor Portability of Neural Network Architectures for LiDAR-based Semantic Labeling](https://arxiv.org/pdf/1907.02149.pdf)
 2D-3D labelling transfer mechanism with different sensor cross tests, no specific adaptation mechanism is proposed.
 ### Dataset-to-Dataset
-[Complete & Label: A Domain Adaptation Approach to Semantic Segmentation of LiDAR Point Clouds](https://arxiv.org/pdf/2007.08488.pdf)
+####[Complete & Label: A Domain Adaptation Approach to Semantic Segmentation of LiDAR Point Clouds](https://arxiv.org/pdf/2007.08488.pdf)
 Create incomplete versions of original lidars and train a voxel based sparse convolution completer. \
 Reproducibility: Hard / No Code
 ## Domain Mapping 
@@ -29,5 +29,9 @@ Cycle GAN over BEV-LIDAR of synthetic data to improve performance of YOLO-R over
 #### [Deep Generative Modeling of LiDAR Data](https://arxiv.org/pdf/1812.01180.pdf)
 Special 2D representation of LIDAR data by keeping (x,y,z) unlike range image. Perform noise and removal to original data, use VAE and GAN for reconstruction. Surprisingly good results with VAE trained only on compressed embeddings not the noisy data itself. \
 Reproducilibility: Medium / [Code](https://github.com/pclucas14/lidar_generation)
-#### [Learning to Drop Points for LiDAR Scan Synthesis] (https://arxiv.org/pdf/2102.11952.pdf)
-#### [ePointDA: An End-to-End Simulation-to-Real Domain Adaptation Framework for LiDAR Point Cloud Segmentation] (https://arxiv.org/pdf/2009.03456.pdf)
+#### [Learning to Drop Points for LiDAR Scan Synthesis](https://arxiv.org/pdf/2102.11952.pdf)
+Uses baseline [Deep Generative Modeling of LiDAR Data](https://arxiv.org/pdf/1812.01180.pdf), similar approach with more advanced data prep with gumbel distribution based mask on confidence map for providing differentiability for back-prop and point drop modeling. \
+Quite amazing test results with recovery on manual perturbation. 🌟 \
+Reproducilibility: Medium / [Code](https://github.com/kazuto1011/dusty-gan)
+#### [ePointDA: An End-to-End Simulation-to-Real Domain Adaptation Framework for LiDAR Point Cloud Segmentation](https://arxiv.org/pdf/2009.03456.pdf)
+
