@@ -20,7 +20,7 @@ TBD
 Create incomplete versions of original lidars and train a voxel based sparse convolution completer. \
 Reproducibility: Hard / No Code
 ## Domain Mapping 
-### Dataset-to-Dataset
+### Dataset-to-Dataset n Sim-to-Real
 #### [Domain Adaptation for Vehicle Detection from Bird’s Eye View LiDAR Point Cloud Data](https://arxiv.org/pdf/1905.08955.pdf)
 Using GAN to make synthethic LIDAR-BEV data more realistic improve BEV-YOLO detector
 #### [LiDAR Sensor modeling and Data augmentation with GANs for Autonomous driving](https://arxiv.org/pdf/1905.07290.pdf)
@@ -28,12 +28,26 @@ Cycle GAN over BEV-LIDAR of synthetic data to improve performance of YOLO-R over
 ### Sim-to-Real
 #### [Deep Generative Modeling of LiDAR Data](https://arxiv.org/pdf/1812.01180.pdf)
 Special 2D representation of LIDAR data by keeping (x,y,z) unlike range image. Perform noise and removal to original data, use VAE and GAN for reconstruction. Surprisingly good results with VAE trained only on compressed embeddings not the noisy data itself. \
-Reproducilibility: Medium / [Code](https://github.com/pclucas14/lidar_generation)
+Reproducilibility: Easy / [Code](https://github.com/pclucas14/lidar_generation)
 #### [Learning to Drop Points for LiDAR Scan Synthesis](https://arxiv.org/pdf/2102.11952.pdf)
 Uses baseline [Deep Generative Modeling of LiDAR Data](https://arxiv.org/pdf/1812.01180.pdf), similar approach with more advanced data prep with Gumbel distribution based mask on confidence map for providing differentiability for back-prop and point drop modeling. \
 Quite amazing test results with recovery on manual perturbation. 🌟 \
-Reproducilibility: Medium / [Code](https://github.com/kazuto1011/dusty-gan)
+Reproducilibility: Easy / [Code](https://github.com/kazuto1011/dusty-gan)
 #### [ePointDA: An End-to-End Simulation-to-Real Domain Adaptation Framework for LiDAR Point Cloud Segmentation](https://arxiv.org/pdf/2009.03456.pdf)
 Using modules of self-supervised dropout noise rendering, statistics-invariant and spatially-adaptive feature alignment,and transferable segmentation learning. \
 Reproducilibility: Hard
-
+### Dataset-to-Dataset
+#### [Domain Adaptation in LiDAR Semantic Segmentation](https://arxiv.org/pdf/2010.12239.pdf)
+Using combination of statistics/feature normalization with [MinEnt](https://arxiv.org/abs/1811.12833), achieves good results with inter-dataset adaptations. Simple tricks however no code.\
+Reproducilibility: Medium
+### Sensor-to-Sensor
+#### [Domain Transfer for Semantic Segmentation of LiDAR Datausing Deep Neural Networks](http://ras.papercept.net/images/temp/IROS/files/0060.pdf)
+From creators of Semantic KITTI, transfer Velodyne HDL-64 scans to match scans from a Velodyne HDL-32, a sensor with a lower resolution and different FOV.
+Exploit the fusion of multiple scans of the source dataset and meshing for a denser map to sample virtual scans, however this aims high to low quality adaptation. \ 
+Reproducilibity: Medium / [Code](https://github.com/PRBonn/lidar_transfer)
+## Domain Invariant Feature Learning
+### Sim-to-Real
+#### [SqueezeSegV2](https://arxiv.org/pdf/1809.08495.pdf)
+Predecessor work of **ePointDA**, and following work of SqueezeSeg, uses GTA-LIDAR and combines  learned intensity rendering, geodesic correlation alignment, and progressive domain calibration for adaptation. \ 
+Reproducibility: Easy / [Code](https://github.com/xuanyuzhou98/SqueezeSegV2)
+#### [xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation](https://arxiv.org/pdf/1911.12676.pdf)
