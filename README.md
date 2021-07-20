@@ -41,13 +41,26 @@ Reproducilibility: Hard
 Using combination of statistics/feature normalization with [MinEnt](https://arxiv.org/abs/1811.12833), achieves good results with inter-dataset adaptations. Simple tricks however no code.\
 Reproducilibility: Medium
 ### Sensor-to-Sensor
-#### [Domain Transfer for Semantic Segmentation of LiDAR Datausing Deep Neural Networks](http://ras.papercept.net/images/temp/IROS/files/0060.pdf)
+#### [Domain Transfer for Semantic Segmentation of LiDAR Data using Deep Neural Networks](http://ras.papercept.net/images/temp/IROS/files/0060.pdf)
 From creators of Semantic KITTI, transfer Velodyne HDL-64 scans to match scans from a Velodyne HDL-32, a sensor with a lower resolution and different FOV.
-Exploit the fusion of multiple scans of the source dataset and meshing for a denser map to sample virtual scans, however this aims high to low quality adaptation. \ 
+Exploit the fusion of multiple scans of the source dataset and meshing for a denser map to sample virtual scans, however this aims high to low quality adaptation. \
 Reproducilibity: Medium / [Code](https://github.com/PRBonn/lidar_transfer)
 ## Domain Invariant Feature Learning
 ### Sim-to-Real
 #### [SqueezeSegV2](https://arxiv.org/pdf/1809.08495.pdf)
-Predecessor work of **ePointDA**, and following work of SqueezeSeg, uses GTA-LIDAR and combines  learned intensity rendering, geodesic correlation alignment, and progressive domain calibration for adaptation. \ 
+Predecessor work of **ePointDA**, and following work of SqueezeSeg, uses GTA-LIDAR and combines  learned intensity rendering, geodesic correlation alignment, and progressive domain calibration for adaptation. \
 Reproducibility: Easy / [Code](https://github.com/xuanyuzhou98/SqueezeSegV2)
+### Multi adaptations
 #### [xMUDA: Cross-Modal Unsupervised Domain Adaptation for 3D Semantic Segmentation](https://arxiv.org/pdf/1911.12676.pdf)
+One of the few model using multi modality (lidar-image) learning with 3d semantic labels. Mimicking between the modalities, achieved through KL divergence. \
+An architecture with separate main and mimicking head to disentangle the segmentation from the cross-modal learning objective. Considers day-night, country-country, dataset-dataset adaptation. \
+Reproducilibity: Medium / [Code](https://github.com/valeoai/xmuda)
+### Dataset-to-Dataset
+#### [LiDARNet: A Boundary-Aware Domain Adaptation Model for Point Cloud Semantic Segmentation](https://arxiv.org/pdf/2003.01174.pdf)
+Boundary-aware domain adaptation approach for semantic segmentation of the lidar point cloud. Utilizes the GatedSCNN to enable the domain shared feature extractor to keep boundary information in the domain shared features and utilize the learned boundary to refine the segmentation. \
+Reproducilibity: Medium / [Code](https://github.com/unmannedlab/LiDARNet)
+### Sensor-to-Sensor
+#### [Range Adaptation for 3D Object Detection in LiDAR](https://arxiv.org/pdf/1909.12249.pdf)
+Cross-range (near/far) and cross-device(multi-dataset) adaptation using adversarial global adaptation and fine-grained local adaptation. Only losses are described no architecture or training details provided. 🌟 \
+Reproducilibity: Hard
+
