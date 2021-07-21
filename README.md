@@ -63,4 +63,8 @@ Reproducilibity: Medium / [Code](https://github.com/unmannedlab/LiDARNet)
 #### [Range Adaptation for 3D Object Detection in LiDAR](https://arxiv.org/pdf/1909.12249.pdf)
 Cross-range (near/far) and cross-device(multi-dataset) adaptation using adversarial global adaptation and fine-grained local adaptation. Only losses are described no architecture or training details provided. 🌟 \
 Reproducilibity: Hard
+### Dataset-to-Dataset
+#### [SF-UDA3D: Source-Free Unsupervised Domain Adaptation for LiDAR-Based 3D Object Detection](https://arxiv.org/pdf/2010.08243.pdf)
+Pseudo-annotations, reversible scale-transformations and motion coherency of object size. Beats the few shot tuning only with scale supervision 🌟 \
+Reproducilibity: Hard [Code](https://github.com/saltoricristiano/SF-UDA-3DV) not released yet.
 
