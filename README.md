@@ -67,10 +67,13 @@ Reproducilibity: Hard
 #### [SF-UDA3D: Source-Free Unsupervised Domain Adaptation for LiDAR-Based 3D Object Detection](https://arxiv.org/pdf/2010.08243.pdf)
 Pseudo-annotations, reversible scale-transformations and motion coherency of object size. Beats the few shot tuning only with scale supervision 🌟 \
 Reproducilibity: Hard / [Code](https://github.com/saltoricristiano/SF-UDA-3DV) not released yet.
-## Normalization Statistics
+## Normalization Statistics n Others
 #### [Cross-Sensor Deep Domain Adaptation for LiDAR Detection and Segmentation](https://repository.tudelft.nl/islandora/object/uuid%3A618db181-4d0d-4384-a9b2-4c0a8925da4f/datastream/OBJ/download)
 Task agnostic, multi task approach combining detection and segmentation using SECOND-like architecture.
 Reproducilibity: Hard
 #### [Pseudo-labeling for Scalable 3D Object Detection](https://arxiv.org/pdf/2103.02093.pdf)
 Using wide/augmented multi-frame teachers for pseudolabelling on unlabeled data and train students over those. Shows promising results especially when the labeled data ratio is low. 🌟 \
 Reproducilibity: Medium
+#### [Exploiting Playbacks in Unsupervised Domain Adaptation for 3D Object Detection](https://arxiv.org/pdf/2103.14198.pdf)
+Uses self-training created pseudo-labels with smoothing(online/offline), resizing and extrapolation(dreaming). 🌟
+Reproducibility: Hard
