@@ -79,8 +79,8 @@ Uses self-training created pseudo-labels with smoothing(online/offline), resizin
 Reproducibility: Hard
 #### [ST3D: Self-training for Unsupervised Domain Adaptation on 3D Object Detection](https://arxiv.org/pdf/2103.05346.pdf)
 Random scale object augmentation, iou-loss for quality aware and memory ensembling, curriculum data augmentation self-training(pseudo-label generation). 🌟🌟 \
-Reproducilibility: Easy [Code](https://github.com/CVMI-Lab/ST3D)
+Reproducilibility: Easy / [Code](https://github.com/CVMI-Lab/ST3D)
 ## Dataset Benchmark
-[One Million Scenes for Autonomous Driving: ONCE Dataset](https://arxiv.org/pdf/2106.11037.pdf)
+#### [One Million Scenes for Autonomous Driving: ONCE Dataset](https://arxiv.org/pdf/2106.11037.pdf)
 Benchmark/Dataset work in self(contrastive/clustering), semi-supervised(pseudo-label,student/teacher) methods, and unsupervised methods (SN-like) over their new dataset and cross dataset using the SECOND as baseline. 🌟🌟 \
 Reproducibility : Easy / [Code](https://github.com/PointsCoder/Once_Benchmark) (only semi-supervised and unsupervised methods)
