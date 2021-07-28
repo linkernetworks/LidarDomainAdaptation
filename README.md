@@ -1,6 +1,4 @@
 # Lidar Domain Adaptation Resource list
-![image](https://user-images.githubusercontent.com/46666499/125759984-3651b19b-c0cb-4be2-a99e-24b164b43667.png)
-
 ## Survey Papers
 #### [A Survey on Deep Domain Adaptation for LiDAR Perception](https://arxiv.org/pdf/2106.02377.pdf)
 ## Domain Invariant Data
@@ -84,3 +82,5 @@ Reproducilibility: Easy / [Code](https://github.com/CVMI-Lab/ST3D)
 #### [One Million Scenes for Autonomous Driving: ONCE Dataset](https://arxiv.org/pdf/2106.11037.pdf)
 Benchmark/Dataset work in self(contrastive/clustering), semi-supervised(pseudo-label,student/teacher) methods, and unsupervised methods (SN-like) over their new dataset and cross dataset using the SECOND as baseline. 🌟🌟 \
 Reproducibility : Easy / [Code](https://github.com/PointsCoder/Once_Benchmark) (only semi-supervised and unsupervised methods)
+## Table 
+![image](https://user-images.githubusercontent.com/46666499/125759984-3651b19b-c0cb-4be2-a99e-24b164b43667.png)
